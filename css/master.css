@@ -55,6 +55,16 @@
     padding: 10px;
     margin: 40px;
 }
+#frame2> .container >.text{
+    margin-left: 30px;
+    width: 50%;
+    text-align: left;
+}
+#frame2> .container >.text> h3{
+    border-bottom: 2px solid rgb(2,0,36);
+    width: fit-content;
+    padding-right: 20px;
+}
 #frame2> .container >.image{
     /* background-color: teal; */
     /* 3456 x 4608 */
