@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+.navbar.transparent.navbar-inverse .navbar-inner {
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+}
+#menu, #menu .nav-link{
+    color: white;
+}
+#menu .nav-link:not(.active):hover{
+    color: rgba(2,0,36,1);
+}
+#menu .nav-link.active{
+    background-color: rgba(2,0,36,1);
+}
+
+#frame1{
+    color: white;
+    position: relative;
+    width: 100vw;
+    height: 700px;
+    overflow: hidden;
+}
+#frame1>.content{
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    padding: 4px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#frame1>.content>.text{
+    width: 45%;
+    border-left: 2px solid white;
+    margin-left: 10px;
+    padding: 5px;
+}
+#frame2{
+    /* height: 100vh;
+    width: 100%; */
+    color:  rgb(2,0,36);
+    text-align: center;
+    padding: 10px;
+    margin: 40px;
+}
+#frame2> .container >.image{
+    /* background-color: teal; */
+    /* 3456 x 4608 */
+    /* 576 x 768 */
+    /* 288 x 384 */
+    width: 288px;
+    height: 384px;
+    border-left: 2px solid rgb(2,0,36);
+    margin-left: 10px;
+    padding: 4px;
+}
+#frame2> .container >.image> img{
+    background-color: teal;
+    width: 100%;
+    height: 100%;
+}
+.image-mask{
+    position: absolute;
+    background: rgb(2,0,36);
+    background: linear-gradient(328deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 37%, rgba(0,67,255,1) 100%);
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
