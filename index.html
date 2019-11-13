@@ -124,9 +124,40 @@
                 </ul>
 
             </div>
-            <figure><embed src="https://wakatime.com/share/@lucasAvelino/48408abc-dc86-4cd4-9630-1ddc7732e805.svg"></embed></figure>
         </div>
     </div>
+    <script>
+        //https://api.github.com/repos/LucasAvelino0509/repos
+        
+        $.ajax({
+            url: "https://api.github.com/users/LucasAvelino0509/repos",
+            dataType: "json",
+            success: (data) => {
+                let langsPerRepo = [];
+                let langs = {};
+                data.forEach(element => {
+                    $.ajax({
+                        url: element.languages_url,
+                        dataType: "json",
+                        success: (data) => {
+                            langsPerRepo.push(data);
+                        }
+                    });
+                });
+
+                langsPerRepo.forEach(element => {
+                    for (const key in element) {
+                        if(langs[key] != undefined){
+                            langs[key] += element[key]
+                        }else{
+                            langs[key] = element[key]
+                        }
+                    }
+                });
+                console.log(langs)
+            }
+        });
+    </script>
 </body>
 
 </html>
