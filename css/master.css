@@ -12,6 +12,9 @@
     background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
     background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
 }
+
+
+
 #menu, #menu .nav-link{
     color: white;
 }
@@ -22,7 +25,25 @@
     background-color: rgba(2,0,36,1);
 }
 
+#menu> button{
+    display: none;
+}
 
+@media only screen and (max-width: 700px) {
+    #menu> button{
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    #menu>.nav{
+        display: flex!important;
+    }
+}
+
+.btn-primary{
+    background-color: rgba(2,0,36,1);
+}
 
 
 #frame1{
@@ -85,9 +106,9 @@
 }
 
 #frame2> .container >.text> h3{
-    border-bottom: 2px solid rgb(2,0,36);
+    /* border-bottom: 2px solid rgb(2,0,36); */
     width: fit-content;
-    padding-right: 20px;
+    /* padding-right: 20px; */
 }
 #frame2> .container >.image{
     /* background-color: teal; */
@@ -146,16 +167,16 @@
 }
 
 #frame3> .container> h3{
-    border-bottom: 2px solid rgb(2,0,36);
+    /* border-bottom: 2px solid rgb(2,0,36); */
     width: fit-content;
-    padding-right: 20px;
+    /* padding-right: 20px; */
     margin-bottom: 30px;
 }
 
 #frame3> .container> h5{
-    border-bottom: 2px solid rgb(2,0,36);
+    /* border-bottom: 2px solid rgb(2,0,36); */
     width: fit-content;
-    padding-right: 20px;
+    /* padding-right: 20px; */
     margin-bottom: 30px;
 }
 
