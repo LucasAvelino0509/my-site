@@ -21,18 +21,24 @@
 <body>
     <nav id="menu" class="nav navbar transparent navbar-inverse position-absolute d-flex justify-content-between w-100"
         style="z-index: 10;">
+        
         <h4>Lucas Avelino</h4>
         <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"
             aria-controls="collapseExample">Menu</button>
         <ul class="nav collapse" id="collapseExample">
-            <li class="nav-item"><a class="nav-link active rounded" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link rounded" href="#">About</a></li>
-            <li class="nav-item"><a class="nav-link rounded" href="#">Skills</a></li>
-            <li class="nav-item"><a class="nav-link rounded" href="#">Language</a></li>
+            <li class="nav-item"><button class="btn nav-link active rounded" >Home</button></li>
+            <li class="nav-item"><button class="btn nav-link rounded" onclick="scrollToElement('#frame2')">About</button></li>
+            <li class="nav-item"><button class="btn nav-link rounded" onclick="scrollToElement('#frame3')">Skills</button></li>
+            <li class="nav-item"><button class="btn nav-link rounded" onclick="scrollToElement('#frame4')">Contact</button></li>
+            <li class="nav-item"><button class="btn nav-link rounded">Language</button></li>
         </ul>
     </nav>
-    <div id="frame1" class="w-100">
-        <img src="./img/banner.jpg" class="d-flex w-100" alt="">
+    <div id="frame1" class="w-100" style="
+        background-image: url('./img/banner.jpg');
+        background-size: cover;
+        background-position-x: 100%;
+        background-position-y: 35%;
+        ">
         <div class="image-mask"></div>
         <div class="content">
             <div class="text">
@@ -122,7 +128,6 @@
                 </ul>
 
             </div>
-            <figure><embed src="https://wakatime.com/share/@lucasAvelino/48408abc-dc86-4cd4-9630-1ddc7732e805.svg"></embed></figure>
         </div>
     </div>
     <div id="frame4" class="w-100">
@@ -130,6 +135,14 @@
             <h3>Contact</h3>
         </div>
     </div>
+    <script>
+        var scrollToElement = function (el, ms) {
+            var speed = (ms) ? ms : 600;
+            $('html,body').animate({
+                scrollTop: $(el).offset().top
+            }, speed);
+        }
+    </script>
 </body>
 
 </html>
