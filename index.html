@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
@@ -15,42 +15,56 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <title>Lucas Araujo Avelino Dos Santos</title>
-    <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="./css/master.css" />
 </head>
 
 <body>
     <nav id="menu" class="nav navbar transparent navbar-inverse position-absolute d-flex justify-content-between w-100"
         style="z-index: 10;">
-        
         <h4>Lucas Avelino</h4>
         <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"
-            aria-controls="collapseExample">Menu</button>
+            aria-controls="collapseExample">
+            Menu
+        </button>
         <ul class="nav collapse" id="collapseExample">
-            <li class="nav-item"><button class="btn nav-link active rounded" >Home</button></li>
-            <li class="nav-item"><button class="btn nav-link rounded" onclick="scrollToElement('#frame2')">About</button></li>
-            <li class="nav-item"><button class="btn nav-link rounded" onclick="scrollToElement('#frame3')">Skills</button></li>
-            <li class="nav-item"><button class="btn nav-link rounded" onclick="scrollToElement('#frame4')">Contact</button></li>
-            <li class="nav-item"><button class="btn nav-link rounded">Language</button></li>
+            <li class="nav-item">
+                <button class="btn nav-link active rounded">Home</button>
+            </li>
+            <li class="nav-item">
+                <button class="btn nav-link rounded" onclick="scrollToElement('#frame2')">
+                    About
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="btn nav-link rounded" onclick="scrollToElement('#frame3')">
+                    Skills
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="btn nav-link rounded" onclick="scrollToElement('#frame4')">
+                    Contact
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="btn nav-link rounded">Language</button>
+            </li>
         </ul>
     </nav>
-    <div id="frame1" class="w-100" style="
-        background-image: url('./img/banner.jpg');
-        background-size: cover;
-        background-position-x: 100%;
-        background-position-y: 35%;
-        ">
+    <div id="frame1" class="w-100">
+        <div class="image"></div>
         <div class="image-mask"></div>
         <div class="content">
             <div class="text">
                 <h2>Hi There...</h2>
                 <h3>I Am A Developer</h3>
-                <span>I'm a developer with 2-year experience, nowadays I'm studying Computer Science at the federal
-                    university of ABC.</span>
+                <span>I'm a developer with 2-year experience, nowadays I'm studying
+                    Computer Science at the federal university of ABC.</span>
                 <div class="social-medias">
                     <a href="https://www.linkedin.com/in/lucas-avelino-082a81150/" target="_blank"><img
-                            src="./img/icons/in.svg" alt=""></a>
-                    <a href="https://github.com/LucasAvelino0509" target="_blank"><img src="./img/icons/github.svg"
-                            alt=""></a>
+                            src="./img/icons/in.svg" alt="" /></a>
+
+                    <a href="https://github.com/lucas-avelino" target="_blank"><img src="./img/icons/github.svg"
+                            alt="" /></a>
                 </div>
             </div>
         </div>
@@ -58,16 +72,25 @@
     <div id="frame2" class="w-100">
         <div class="container h-100">
             <div class="image">
-                <img src="./img/me.jpg" alt="">
+                <img src="./img/me.jpg" alt="" />
             </div>
             <div class="text">
                 <h3>About me</h3>
-                <h5>I'm Junior Developer at Tripletech and People Manager at Green Team Hacker Club</h5>
-                <p>At <b>Tripletech</b> I use to develop with C# (.NET CORE), MSSQL, React Js (TypeScript) and other
-                    techonologies, that we have in the legacies applications, like PHP, VB ASP.NET.</p>
-                <p>At <b>Green Team Hacker Club</b> (College organization that spreads the hacker culture and teaches
-                    good security practices), I manage the members of the group and I study about IT security and how to
-                    apply it on your codes.</p>
+                <h5>
+                    I'm Junior Developer at Tripletech and People Manager at Green Team
+                    Hacker Club
+                </h5>
+                <p>
+                    At <b>Tripletech</b> I use to develop with C# (.NET CORE), MSSQL,
+                    React Js (TypeScript) and other techonologies, that we have in the
+                    legacies applications, like PHP, VB ASP.NET.
+                </p>
+                <p>
+                    At <b>Green Team Hacker Club</b> (College organization that spreads
+                    the hacker culture and teaches good security practices), I manage
+                    the members of the group and I study about IT security and how to
+                    apply it on your codes.
+                </p>
             </div>
         </div>
     </div>
@@ -126,21 +149,93 @@
                         </div>
                     </li>
                 </ul>
-
             </div>
         </div>
     </div>
-    <div id="frame4" class="w-100">
+    <div id="frame4" class="w-100 ">
+        <div class="container">
+            <h3>Projects</h3>
+            <div class="content">
+                <div class="card item">
+                    <video class="card-img-top" loop muted>
+                        <source src="./video/preview1.mp4" type="video/mp4">
+                    </video>
+                    <div class="card-body">
+                        <span class="badge badge-primary">On Developing...</span>
+                        <h5>Algorithm Vizualizer</h5>
+                        <p>Project that show has some algorithms work</p>
+                        <a href="https://github.com/lucas-avelino/algorithms-visualizer" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="45" height="45"
+                                viewBox="0 0 172 172" style=" fill:#000000;">
+                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                    stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+                                    text-anchor="none" style="mix-blend-mode: normal">
+                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                    <g fill="#000000">
+                                        <path
+                                            d="M78.11667,15.05c-32.96667,3.58333 -59.48333,30.1 -63.06667,62.35c-4.3,35.83333 17.91667,66.65 49.45,76.68333v-16.48333c0,0 -2.86667,0.71667 -6.45,0.71667c-10.03333,0 -14.33333,-8.6 -15.05,-13.61667c-0.71667,-2.86667 -2.15,-5.01667 -4.3,-7.16667c-2.15,-0.71667 -2.86667,-0.71667 -2.86667,-1.43333c0,-1.43333 2.15,-1.43333 2.86667,-1.43333c4.3,0 7.88333,5.01667 9.31667,7.16667c3.58333,5.73333 7.88333,7.16667 10.03333,7.16667c2.86667,0 5.01667,-0.71667 6.45,-1.43333c0.71667,-5.01667 2.86667,-10.03333 7.16667,-12.9c-16.48333,-3.58333 -28.66667,-12.9 -28.66667,-28.66667c0,-7.88333 3.58333,-15.76667 8.6,-21.5c-0.71667,-1.43333 -1.43333,-5.01667 -1.43333,-10.03333c0,-2.86667 0,-7.16667 2.15,-11.46667c0,0 10.03333,0 20.06667,9.31667c3.58333,-1.43333 8.6,-2.15 13.61667,-2.15c5.01667,0 10.03333,0.71667 14.33333,2.15c9.31667,-9.31667 20.06667,-9.31667 20.06667,-9.31667c1.43333,4.3 1.43333,8.6 1.43333,11.46667c0,5.73333 -0.71667,8.6 -1.43333,10.03333c5.01667,5.73333 8.6,12.9 8.6,21.5c0,15.76667 -12.18333,25.08333 -28.66667,28.66667c4.3,3.58333 7.16667,10.03333 7.16667,16.48333v23.65c29.38333,-9.31667 50.16667,-36.55 50.16667,-68.08333c0,-43 -36.55,-76.68333 -79.55,-71.66667z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="card item">
+                        <video class="card-img-top" loop muted>
+                            <source src="./video/preview2.mp4" type="video/mp4">
+                        </video>
+                        <div class="card-body">
+                            <span class="badge badge-danger">Stoped</span>
+                            <h5>React guitar</h5>
+                            <p>Project that emulates the famous game Guitar Hero</p>
+                            <a href="https://github.com/lucas-avelino/algorithms-visualizer" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="45" height="45"
+                                    viewBox="0 0 172 172" style=" fill:#000000;">
+                                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                        stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+                                        text-anchor="none" style="mix-blend-mode: normal">
+                                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                                        <g fill="#000000">
+                                            <path
+                                                d="M78.11667,15.05c-32.96667,3.58333 -59.48333,30.1 -63.06667,62.35c-4.3,35.83333 17.91667,66.65 49.45,76.68333v-16.48333c0,0 -2.86667,0.71667 -6.45,0.71667c-10.03333,0 -14.33333,-8.6 -15.05,-13.61667c-0.71667,-2.86667 -2.15,-5.01667 -4.3,-7.16667c-2.15,-0.71667 -2.86667,-0.71667 -2.86667,-1.43333c0,-1.43333 2.15,-1.43333 2.86667,-1.43333c4.3,0 7.88333,5.01667 9.31667,7.16667c3.58333,5.73333 7.88333,7.16667 10.03333,7.16667c2.86667,0 5.01667,-0.71667 6.45,-1.43333c0.71667,-5.01667 2.86667,-10.03333 7.16667,-12.9c-16.48333,-3.58333 -28.66667,-12.9 -28.66667,-28.66667c0,-7.88333 3.58333,-15.76667 8.6,-21.5c-0.71667,-1.43333 -1.43333,-5.01667 -1.43333,-10.03333c0,-2.86667 0,-7.16667 2.15,-11.46667c0,0 10.03333,0 20.06667,9.31667c3.58333,-1.43333 8.6,-2.15 13.61667,-2.15c5.01667,0 10.03333,0.71667 14.33333,2.15c9.31667,-9.31667 20.06667,-9.31667 20.06667,-9.31667c1.43333,4.3 1.43333,8.6 1.43333,11.46667c0,5.73333 -0.71667,8.6 -1.43333,10.03333c5.01667,5.73333 8.6,12.9 8.6,21.5c0,15.76667 -12.18333,25.08333 -28.66667,28.66667c4.3,3.58333 7.16667,10.03333 7.16667,16.48333v23.65c29.38333,-9.31667 50.16667,-36.55 50.16667,-68.08333c0,-43 -36.55,-76.68333 -79.55,-71.66667z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg></a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div id="frame5" class="w-100 ">
         <div class="container">
             <h3>Contact</h3>
         </div>
     </div>
     <script>
         var scrollToElement = function (el, ms) {
-            var speed = (ms) ? ms : 600;
-            $('html,body').animate({
-                scrollTop: $(el).offset().top
-            }, speed);
+            var speed = ms ? ms : 600;
+            $("html,body").animate(
+                {
+                    scrollTop: $(el).offset().top
+                },
+                speed
+            );
+        };
+        var figure = $(".item").hover(hoverVideo, hideVideo);
+
+        function hoverVideo(e) {
+            $("video", this)
+                .get(0)
+                .play();
+        }
+
+        function hideVideo(e) {
+            $("video", this)
+                .get(0)
+                .pause();
         }
     </script>
 </body>
