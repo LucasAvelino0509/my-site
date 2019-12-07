@@ -38,9 +38,11 @@
 #frame1,
 #frame2,
 #frame3,
-#frame4 {
+#frame4,
+#frame5 {
     position: sticky;
     top: 0;
+    box-shadow: 0px 0px 10px 0px black;  
 }
 
 #menu,
@@ -105,7 +107,7 @@
   font-size: 1.3rem;
 }
 #frame1 > .image {
-  background-image: url("../img/a.jpg");
+  background-image: url("../img/code-bg.jpg");
   background-size: cover;
   background-position-x: 50%;
   background-position-y: 50%;
@@ -114,6 +116,7 @@
   min-width: 100%;
   height: 100%;
 }
+
 @media only screen and (max-width: 700px) {
   #frame1 {
     width: 100vw;
@@ -126,7 +129,7 @@
 }
 
 #frame2 {
-  height: 70vh;
+  height: 60vh;
   color: rgb(2, 0, 36);
   text-align: center;
   background-color: white;
@@ -199,7 +202,7 @@
 
 #frame3 {
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   background-color: whitesmoke;
 }
 
@@ -218,7 +221,7 @@
 }
 
 #frame3 .skills {
-  width: 50%;
+  width: 75%;
 }
 
 #frame3 .skills > ul {
@@ -345,9 +348,70 @@
         transition: none;
     }
 
-    #frame1, #frame2, #frame3,#frame4{
+    #frame1, #frame2, #frame3,#frame4,#frame5{
         position: relative;
     }
+}
+
+#frame5 {
+  color: white;
+  background-color: white;
+  /* position: relative; */
+  width: 100vw;
+  height: 40vh;
+  overflow: hidden;
+  display: flex;
+  z-index: 11;
+}
+
+#frame5 > .content {
+  padding: 25px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+}
+
+#frame5 > .content > .items{
+  min-height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+
+#frame5 > .content > .items > .item > a{
+    font-size: 1.5rem;
+    margin-left: 5px;
+    text-decoration: none;
+    color: white;
+}
+#frame5 > .content > .items > .item > a:hover{
+    /* te */
+}
+
+#frame5 > .content > .items > .item{
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+#frame5 > .content > .text {
+  font-size: 1.3rem;
+}
+#frame5 > .image {
+  background-image: url("../img/office-bg.jpg");
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  min-width: 100%;
+  height: 100%;
 }
 
 
